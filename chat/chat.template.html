@@ -1,0 +1,16 @@
+<div class="chat-container">
+	<div class="msg" ng-repeat="msg in $ctrl.messages" >
+		<span class="author">{{msg.author}}</span>
+		<span class="text">{{msg.text}}</span>
+		<span class="time">{{msg.time}}</span>
+	</div>
+</div>
+
+<div class="input-container">
+	<input ng-model="$ctrl.msgInput" class="form-control" type="text" placeholder="Say hello!">
+	<input type="button" class="btn btn-default" value="SEND" ng-click="$ctrl.sendMessage()">
+	<span class="loggedAs">as <strong>{{$ctrl.login}}</strong></span>
+	<div class="link-back">
+		<a href="login.html">Back to Login</a>
+	</div>
+</div>

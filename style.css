@@ -1,0 +1,53 @@
+body div {
+	display: inline-block;
+	background: #f0f0f0;
+	padding: 10px;
+	width: calc(100% - 20px);
+	margin: 10px;
+	border: dotted 2px gray;
+}
+
+.chat-container {
+	height: 80vh;
+	overflow-y: scroll;
+}
+
+.msg {
+	border: none;
+	background-color: #fff;
+}
+
+.msg .author {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.msg .author::after {
+	content: ":";
+}
+
+.msg .time {
+	float: right;
+	color: gray;
+}
+
+.input-container {
+	height: 15vh;
+}
+
+.form-control {
+	display: inline-block;
+	width: 70%;
+}
+
+.form-control.error {
+	background-color: #ffd4d4;
+}
+
+.link-back {
+	border: none;
+	text-align: right;
+	max-width: 15%;
+	display: inline-block;
+	float: right;
+}
